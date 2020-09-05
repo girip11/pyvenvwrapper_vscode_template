@@ -9,7 +9,7 @@ jobs:
   tox:
     strategy:
       matrix:
-        python-version: ["3.7", "3.8"]
+        python_version: [3.7, 3.8]
         os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
@@ -17,14 +17,16 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
-          python-version: ${{ matrix.python-version }}
-      - name: install-tox
-        run: python -m pip install --upgrade tox virtualenv setuptools pip
+          python_version: ${{ matrix.python_version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install tox tox-gh-actions
       - name: run-tox
         run: tox
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
-        if: matrix.python-version == '3.8' && matrix.os == 'ubuntu-latest'
+        if: matrix.python_version == '3.8' && matrix.os  == 'ubuntu-latest'
         with:
           env_vars: OS,PYTHON
           name: codecov-umbrella

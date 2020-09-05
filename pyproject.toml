@@ -18,10 +18,6 @@ command_line = "-m pytest tests -vv"
 include = ["src/*"]
 omit = ["tests/*"]
 
-[tool.coverage.xml]
-include = ["src/*"]
-omit = ["tests/*"]
-
 [tool.coverage.report]
 exclude_lines = [
   "pragma: no cover",
