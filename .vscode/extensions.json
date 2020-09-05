@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "lextudio.restructuredtext",
+    "emeraldwalk.RunOnSave",
+    "timonwong.shellcheck",
+    "foxundermoon.shell-format",
+    "littlefoxteam.vscode-python-test-adapter",
+    "michelemelluso.gitignore",
+    "redhat.vscode-yaml",
+    "be5invis.toml",
+    "hangxingliu.vscode-nginx-conf-hint"
+  ]
+}

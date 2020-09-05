@@ -1,0 +1,11 @@
+autoflake
+black
+coverage
+flake8
+interrogate
+isort
+mypy
+pydocstyle
+pylint
+pytest
+tox
