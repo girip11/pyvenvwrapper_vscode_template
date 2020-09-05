@@ -1,7 +1,7 @@
-- id: nbqa
-  name: nbqa
-  description: "Quality Assurance for Jupyter Notebooks"
-  entry: nbqa
+- id: Sample
+  name: Sample
+  description: "Sample project template"
+  entry: sample_pyproject
   language: python
   language_version: python3
   require_serial: true

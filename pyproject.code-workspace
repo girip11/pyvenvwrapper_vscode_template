@@ -56,12 +56,6 @@
           "cmd": "${workspaceFolder}/runonsave.sh '${workspaceFolder}/.venv/env38' '${file}'",
           "isAsync": false
         }
-        // ,
-        // {
-        //   "match": "\\.py$",
-        //   "cmd": "${workspaceFolder}/.venv/env38/bin/autoflake -i --remove-all-unused-imports '${file}'",
-        //   "isAsync": false
-        // }
       ]
     },
     "restructuredtext.builtDocumentationPath": "${workspaceFolder}/docs/_build/html",
