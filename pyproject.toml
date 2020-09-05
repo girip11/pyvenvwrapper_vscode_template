@@ -14,14 +14,27 @@ line-length = 88
 target-version = ['py37', 'py38']
 
 [tool.coverage.run]
-command_line = "-m pytest"
-omit = [
-  "*/tests/*",
-]
+command_line = "-m pytest tests -vv"
+include = ["src/*"]
+omit = ["tests/*"]
+
+[tool.coverage.xml]
+include = ["src/*"]
+omit = ["tests/*"]
 
 [tool.coverage.report]
-# fail_under = 90.0
+exclude_lines = [
+  "pragma: no cover",
+  "def __repr__",
+  "if self.debug",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "if 0:",
+  "if __name__ == .__main__.:",
+]
+fail_under = 100.0
 ignore_errors = true
+include = ["src/*"]
 omit = ["tests/*"]
 show_missing = true
 skip_empty = true
