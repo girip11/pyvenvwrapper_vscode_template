@@ -9,6 +9,7 @@
     "michelemelluso.gitignore",
     "redhat.vscode-yaml",
     "be5invis.toml",
-    "hangxingliu.vscode-nginx-conf-hint"
+    "hangxingliu.vscode-nginx-conf-hint",
+    "njpwerner.autodocstring"
   ]
 }

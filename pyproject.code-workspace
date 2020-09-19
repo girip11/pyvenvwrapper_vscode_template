@@ -41,6 +41,7 @@
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
     "python.linting.pydocstyleEnabled": true,
+    "autoDocstring.docstringFormat": "numpy",
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
     "python.testing.pytestEnabled": true,
